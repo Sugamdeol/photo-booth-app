@@ -1,0 +1,16 @@
+{
+  "name": "photo-booth-app",
+  "version": "1.0.0",
+  "description": "A simple photo booth application built with Node.js and Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.17.3",
+    "multer": "^1.4.4"
+  },
+  "author": "",
+  "license": "ISC"
+}
