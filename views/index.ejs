@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Booth</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Photo Booth</h1>
+        <% if (typeof msg != 'undefined') { %>
+            <div class="alert"><%= msg %></div>
+        <% } %>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="photo">
+            <input type="submit" value="Upload Photo">
+        </form>
+        <% if (typeof file != 'undefined') { %>
+            <h3>Your Uploaded Photo:</h3>
+            <img src="<%= file %>" alt="Uploaded Photo">
+        <% } %>
+    </div>
+</body>
+</html>
